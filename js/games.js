@@ -161,35 +161,16 @@ function loadGames(list, divid, search) {
         );
 
         div.addEventListener("click", () => {
+            const randomNumber = Math.floor(Math.random() * 5) + 1;
+if (randomNumber === 2) {
+  window.open('https://www.profitablecpmratenetwork.com/d0rhd2ygnq?key=03103bd4a4fcfc8ba6b24bafb35ed313');
+ window.open('https://www.profitablecpmratenetwork.com/wckwi2uy?key=07ece675a0506995f894fe10d8232d44');
+}
             addToRecentGames(g);
             window.location.href = `/play/${safeTitle}.html`;
         });
 
         frag.appendChild(div);
-
-        if (count % 20 === 0) {
-            const adWrapper = document.createElement("div");
-            adWrapper.className = "game-card nohover";
-            adWrapper.innerHTML = `
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7431909844582259"
-                     crossorigin="anonymous"></script>
-
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-7431909844582259"
-                     data-ad-slot="8801020295"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-`;
-            adWrapper.style.width = '100%';
-            adWrapper.style.height = '180px';
-            adWrapper.style.maxWidth = "1280px";
-            frag.appendChild(adWrapper);
-        }
     });
 
 
